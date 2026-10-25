@@ -1,0 +1,225 @@
+NOOR CLI — Sample Output
+========================
+
+Captured on 25 October 2026 (Asia/Dhaka). ANSI colors are omitted here;
+the live CLI uses emerald for the next prayer, gold for Hijri dates, and
+cyan for the clock and dates. Prayer times in this sample were fetched
+from the AlAdhan API — they are not hard-coded in the application.
+
+The default Asr school is Shafi (0), which is why Asr is shown at 03:00 PM.
+
+
+1. English dashboard (default 12-hour clock, Shafi Asr)
+-------------------------------------------------------
+
+                            _   _   ___    ___   ____                           
+                           | \ | | / _ \  / _ \ |  _ \                          
+                          |  \| || | | || | | || |_) |                          
+                           | |\  || |_| || |_| ||  _ <                          
+                          |_| \_| \___/  \___/ |_| \_\                          
+                          Where Time Meets Tranquility                          
+                        Peace be upon you · আসসালামু আলাইকুম                         
+
+╭─ DATE & TIME ────────────────────────────────────────────────────────────────╮
+│ Local time    05:27:35 PM                                                    │
+│ English date  Sunday, 25 October 2026                                        │
+│ Bangla date   9 Kartik 1433                                                  │
+│ Hijri date    14 Jumada al-Awwal 1448                                        │
+│ Season        Late Autumn                                                    │
+│ City          Dhaka, Bangladesh                                              │
+│ Timezone      Asia/Dhaka (UTC+06:00)                                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ PRAYER TIMES ───────────────────────────────────────────────────────────────╮
+│ Prayer / Event      Time  Status                                             │
+│ ──────────────  ────────  ───────                                            │
+│ Fajr            04:44 AM  Passed                                             │
+│ Sunrise         06:00 AM  Event                                              │
+│ Dhuhr           11:42 AM  Passed                                             │
+│ Asr             03:00 PM  Passed                                             │
+│ Sunset          05:24 PM  Event                                              │
+│ Maghrib         05:24 PM  Current                                            │
+│ Isha            06:40 PM  Next                                               │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ NEXT PRAYER ────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│                                     ISHA                                     │
+│                                   06:40 PM                                   │
+│                                in 01h 12m 24s                                │
+│                     Current window: Maghrib · until Isha                     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ STATUS & SOURCE ────────────────────────────────────────────────────────────╮
+│ Source                   FRESH                                               │
+│ Last successful refresh  25 Oct 2026, 05:27:36 PM                            │
+│ Method                   1 · Karachi                                         │
+│ Asr school               Shafi (0)                                           │
+│ Hijri adjustment         None                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+• Hijri dates may differ by one day due to local moon sighting.
+• Sunrise and Sunset are informational events, not obligatory prayers.
+• Next = upcoming prayer · Current = active prayer window · Passed = completed.
+
+                         NOOR CLI v1.0.0 · AlAdhan API
+
+
+2. Bangla dashboard (--bn --24h)
+--------------------------------
+
+                            _   _   ___    ___   ____                           
+                           | \ | | / _ \  / _ \ |  _ \                          
+                          |  \| || | | || | | || |_) |                          
+                           | |\  || |_| || |_| ||  _ <                          
+                          |_| \_| \___/  \___/ |_| \_\                          
+                                  সময়ের মিলনে প্রশান্তি                                  
+                       আসসালামু আলাইকুম · শান্তি ও কল্যাণ আপনার সাথে থাকুক                       
+
+╭─ তারিখ ও সময় ──────────────────────────────────────────────────────────────────╮
+│ স্থানীয় সময়  ১৭:২৭:৩৬                                                            │
+│ ইংরেজি তারিখ  Sunday, 25 October 2026                                             │
+│ বাংলা তারিখ   ৯ কার্তিক ১৪৩৩                                                          │
+│ হিজরি তারিখ  ১৪ জমাদিউল আউয়াল ১৪৪৮                                                  │
+│ ঋতু       হেমন্ত                                                                 │
+│ শহর      Dhaka, Bangladesh                                                   │
+│ টাইমজোন    Asia/Dhaka (UTC+06:00)                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ নামাজের সময়সূচি ─────────────────────────────────────────────────────────────────╮
+│ নামাজ / ঘটনা    সময়  অবস্থা                                                        │
+│ ─────────  ─────  ─────                                                      │
+│ ফজর        ০৪:৪৪  অতীত                                                        │
+│ সূর্যোদয়       ০৬:০০  ঘটনা                                                        │
+│ যোহর        ১১:৪২  অতীত                                                        │
+│ আসর        ১৫:০০  অতীত                                                        │
+│ সূর্যাস্ত        ১৭:২৪  ঘটনা                                                        │
+│ মাগরিব       ১৭:২৪  চলমান                                                       │
+│ ইশা         ১৮:৪০  পরবর্তী                                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ পরবর্তী নামাজ ───────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│                                      ইশা                                      │
+│                                    ১৮:৪০                                     │
+│                                আর ০১ঘ ১২মি ২৩সে                                │
+│                           চলমান ওয়াক্ত: মাগরিব · পর্যন্ত ইশা                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ অবস্থা ও উৎস ──────────────────────────────────────────────────────────────────╮
+│ উৎস         ক্যাশ                                                               │
+│ শেষ সফল রিফ্রেশ  ২৫ Oct ২০২৬, ০৫:২৭:৩৬ PM                                         │
+│ গণনা পদ্ধতি     ১ · Karachi                                                      │
+│ আসর মাযহাব    শাফি (০)                                                           │
+│ হিজরি সমন্বয়    নেই                                                               │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+• ক্যাশ করা তথ্য — সরাসরি রিফ্রেশ নয়।
+• স্থানীয় চাঁদ দেখার কারণে হিজরি তারিখে এক দিনের পার্থক্য হতে পারে।
+• সূর্যোদয় ও সূর্যাস্ত তথ্যপূর্ণ ঘটনা; এগুলো ফরজ নামাজ নয়।
+• পরবর্তী = আগত নামাজ · চলমান = চলতি ওয়াক্ত · অতীত = সম্পন্ন।
+
+                         NOOR CLI v1.0.0 · AlAdhan API
+
+
+3. Configuration view (noor config)
+-----------------------------------
+
+╭─ CONFIGURATION ──────────────────────────────────────────────────────────────╮
+│ City              Dhaka                                                      │
+│ Country           Bangladesh                                                 │
+│ Timezone          Asia/Dhaka                                                 │
+│ Method            1 · Karachi                                                │
+│ Asr school        Shafi (0)                                                  │
+│ Language          English (en)                                               │
+│ Clock format      12h                                                        │
+│ Hijri adjustment  None                                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────╮
+│ Config file: /home/user/.config/noor-cli/config.json                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ Available options ──────────────────────────────────────────────────────────╮
+│ language: en, bn · format: 12h, 24h · school: Shafi (0), Hanafi (1) ·        │
+│ adjustment: -3..3 days                                                       │
+│                                                                              │
+│ Calculation methods: run "noor config method" for the complete list.         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────╮
+│ Useful commands                                                              │
+│                                                                              │
+│ noor config city Dhaka                                                       │
+│ noor config timezone Asia/Dhaka                                              │
+│ noor config method 1                                                         │
+│ noor config school 0                                                         │
+│ noor config language bn                                                      │
+│ noor config format 24h                                                       │
+│ noor config adjustment 0                                                     │
+│ noor config                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+4. Offline / unavailable state (no cache, no fabricated times)
+--------------------------------------------------------------
+
+                            _   _   ___    ___   ____                           
+                           | \ | | / _ \  / _ \ |  _ \                          
+                          |  \| || | | || | | || |_) |                          
+                           | |\  || |_| || |_| ||  _ <                          
+                          |_| \_| \___/  \___/ |_| \_\                          
+                          Where Time Meets Tranquility                          
+                        Peace be upon you · আসসালামু আলাইকুম                         
+
+╭─ DATE & TIME ────────────────────────────────────────────────────────────────╮
+│ Local time    05:27:37 PM                                                    │
+│ English date  Sunday, 25 October 2026                                        │
+│ Bangla date   9 Kartik 1433                                                  │
+│ Hijri date    Unavailable                                                    │
+│ Season        Late Autumn                                                    │
+│ City          Dhaka, Bangladesh                                              │
+│ Timezone      Asia/Dhaka (UTC+06:00)                                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ PRAYER TIMES ───────────────────────────────────────────────────────────────╮
+│ Prayer / Event   Time  Status                                                │
+│ ──────────────  ─────  ───────────                                           │
+│ Fajr                —  Unavailable                                           │
+│ Sunrise             —  Unavailable                                           │
+│ Dhuhr               —  Unavailable                                           │
+│ Asr                 —  Unavailable                                           │
+│ Sunset              —  Unavailable                                           │
+│ Maghrib             —  Unavailable                                           │
+│ Isha                —  Unavailable                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ NEXT PRAYER ────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│          Next prayer unavailable until prayer times can be loaded.           │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ STATUS & SOURCE ────────────────────────────────────────────────────────────╮
+│ Source                   UNAVAILABLE                                         │
+│ Last successful refresh  Never                                               │
+│ Method                   1 · Karachi                                         │
+│ Asr school               Shafi (0)                                           │
+│ Hijri adjustment         None                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+⚠ Prayer times could not be retrieved: the API is unreachable or the device is
+  offline
+⚠ No cached prayer times are available. Connect to the internet and run "noor
+  refresh".
+
+• Hijri dates may differ by one day due to local moon sighting.
+• Sunrise and Sunset are informational events, not obligatory prayers.
+• Next = upcoming prayer · Current = active prayer window · Passed = completed.
+
+                         NOOR CLI v1.0.0 · AlAdhan API
